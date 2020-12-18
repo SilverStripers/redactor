@@ -274,7 +274,7 @@ inputCleanerService.prototype.input = function(html, paragraphize, started)
 
 inputCleanerService.prototype.output = function(html, removeMarkers)
 {
-    html = this.removeInvisibleSpaces(html);
+    // html = this.removeInvisibleSpaces(html);
 
     if (this.opts.breakline) {
         html = html.replace(/<\/(span|strong|b|i|em)><br\s?\/?><\/div>/gi, "</$1></div>");
